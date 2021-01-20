@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #007bff;
+}
+
+.container img {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin-top: 60px;
+}
+.card {
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 12px 12px 22px #304051;
+  padding-bottom: 67px;
+}
