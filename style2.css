@@ -1,71 +1,267 @@
-.home {
-  background-image: url(images/team-pic.jpg);
-  background-size: cover;
-  height: 100vh; /*بارتفاع المكان اللي واقفه عنده */
-  position: relative;
+/* **********************************login */
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* background: linear-gradient(to right, #b92b27, #1565c0) */
 }
 
-/* .home img {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-} */
-
-.img-content {
+.box {
+  width: 500px;
+  padding: 35px;
   position: absolute;
-  top: 40%;
-  left: 70%;
-  transform: translate(-50%, -50%);
-  text-transform: uppercase;
-  /* text-align: center; */
-}
-
-.navbar-brand {
-  font-size: 30px;
-}
-
-.icon {
-  padding: 8px;
-  font-size: 1.7em;
-}
-.btn-submit {
-  margin: 10px auto;
-}
-
-.form-control {
-  height: calc(1.5em + 0.75rem + 10px);
-}
-
-/* .modal-footer {
-  justify-content: space-between;
-} */
-.social {
+  top: 50%;
+  left: 50%;
+  background: white;
   text-align: center;
+  transition: 0.25s;
+  height: 670px;
 }
-.social i {
-  font-size: 55px;
+a:hover {
+  color: #2ecc71;
 }
-.social i:nth-child(1) {
-  color: rgb(34, 34, 194);
-  margin-right: 100px;
+.btn {
+  background: transparent;
+  border: none;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
-.social i:nth-child(2) {
-  color: rgb(226, 6, 6);
+.text {
+  margin: 10px;
 }
 
-img.avatar {
-  width: 30%;
+.box input[type="text"],
+.box input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 25px auto;
+  text-align: center;
+  border: 2px solid #3498db;
+  padding: 10px 10px;
+  width: 250px;
+  outline: none;
+  color: #000;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box h1 {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.box input[type="text"]:focus,
+.box input[type="password"]:focus {
+  width: 300px;
+  border-color: #2ecc71;
+}
+
+.box input[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  padding: 14px 40px;
+  outline: none;
+  color: #000;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box input[type="submit"]:hover {
+  background: #2ecc71;
+}
+
+.forgot {
+  text-decoration: underline;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+
+.social-network a.icoTwitter:hover {
+  background-color: #33ccff;
+}
+
+.social-network a.icoGoogle:hover {
+  background-color: #bd3518;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i {
+  color: #fff;
+}
+
+a.socialIcon:hover,
+.socialHoverClass {
+  color: #44bcdd;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
   border-radius: 50%;
-}
-
-#btn {
+  text-align: center;
+  width: 50px;
+  height: 50px;
   font-size: 20px;
 }
 
-.dropdown-menu {
-  /* transform: scale3d(0, 1, 1); */
+.social-circle li i {
+  margin: 0;
+  line-height: 50px;
+  text-align: center;
 }
 
-#dropdownMenuLink:hover::div.dropdown-menu {
-  /* transform: scale3d(1, 1, 1); */
+.social-circle li a:hover i,
+.triggeredHover {
+  transform: rotate(360deg);
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #000;
+  transition: all 0.8s;
+  transition: all 0.8s;
+}
+.txt1 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #666666;
+  text-align: center;
+  margin: 30px;
+}
+
+.txt2 {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  text-transform: uppercase;
+}
+.txt3 {
+  text-align: center;
+  margin-top: 100px;
+}
+#exampleModal {
+  padding-left: 20px;
+}
+.form-check-label {
+  color: #666666;
+}
+
+/* Style for validation */
+
+.iconname {
+  position: absolute;
+  top: 125px;
+  right: 77px;
+}
+
+.iconnameL {
+  position: absolute;
+  top: 157px;
+  right: 82px;
+}
+
+.iconemail {
+  position: absolute;
+  top: 200px;
+  right: 77px;
+}
+
+.iconpass {
+  position: absolute;
+  top: 274px;
+  right: 77px;
+}
+
+.iconpassL {
+  position: absolute;
+  top: 228px;
+  right: 82px;
+}
+
+.iconpass2 {
+  position: absolute;
+  top: 345px;
+  right: 77px;
+}
+
+.box small {
+  position: absolute;
+  left: 155px;
+  visibility: hidden;
+}
+
+.box small.msgL1 {
+  top: 189px;
+}
+
+.box small.msg1 {
+  top: 157px;
+}
+.box small.msg2 {
+  top: 231px;
+}
+.box small.msg3 {
+  top: 304px;
+}
+
+.box small.msgL3 {
+  top: 261px;
+}
+.box small.msg4 {
+  top: 381px;
+}
+
+.box i.fa-check-circle,
+.box i.fa-exclamation-circle {
+  visibility: hidden;
+}
+div.success i.fa-check-circle {
+  color: green;
+  visibility: visible;
+}
+
+div.success input[type="text"],
+div.success input[type="password"] {
+  border: 2px solid green;
+}
+
+div.error i.fa-exclamation-circle {
+  color: red;
+  visibility: visible;
+}
+
+div.error input[type="text"],
+div.error input[type="password"] {
+  border: 2px solid red;
+}
+
+div.error small {
+  color: red;
+  visibility: visible;
 }
